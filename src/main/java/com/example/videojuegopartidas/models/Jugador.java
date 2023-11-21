@@ -1,8 +1,6 @@
 package com.example.videojuegopartidas.models;
 
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import org.springframework.data.annotation.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,6 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
+@Entity
 @Table(name="Jugadores")
 public class Jugador {
 
@@ -21,6 +20,7 @@ public class Jugador {
     private String id;
     private String nombreInvocador;
     @OneToOne
+    @MapsId
     @JoinColumn(name = "id")
     private DatosPartida datosPartida;
 }
