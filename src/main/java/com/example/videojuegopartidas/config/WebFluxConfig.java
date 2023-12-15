@@ -1,4 +1,4 @@
-package com.example.videojuegopartidas.config.actuator;
+package com.example.videojuegopartidas.config;
 
 import com.example.videojuegopartidas.handler.ExampleHandler;
 import org.springframework.context.annotation.Bean;
