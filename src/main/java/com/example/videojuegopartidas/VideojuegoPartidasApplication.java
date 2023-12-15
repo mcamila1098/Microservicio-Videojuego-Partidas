@@ -12,7 +12,7 @@ import org.springframework.r2dbc.connection.init.ResourceDatabasePopulator;
 
 @SpringBootApplication
 @OpenAPIDefinition(info=@Info(title="API para el servicio de Videojuego: Partidas", version = "1.0",
-		description = "API que expone los endpoints para la entidad personaje de la solución VideoJuego (Servicio de Jugadores)"))
+		description = "API que expone los endpoints para la entidad personaje de la solucion VideoJuego (Servicio de Jugadores)"))
 public class VideojuegoPartidasApplication {
 
 	@Bean
